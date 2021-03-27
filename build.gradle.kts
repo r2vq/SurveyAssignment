@@ -14,6 +14,9 @@ repositories {
 }
 
 dependencies {
+    implementation("com.squareup.okio:okio:2.10.0")
+    implementation("org.koin:koin-core:2.2.2")
+
     testImplementation(kotlin("test-junit"))
 }
 
