@@ -4,10 +4,10 @@ interface View {
     /**
      * Print a message and return the user's input.
      */
-    fun askForInput(message: String): String
+    fun askForInput(message: String?): String
 
     /**
      * Print a message.
      */
-    fun printMessage(message: String)
+    fun printMessage(message: String?)
 }

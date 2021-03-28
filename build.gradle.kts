@@ -14,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
     implementation("com.squareup.okio:okio:2.10.0")
     implementation("org.koin:koin-core:2.2.2")
 
