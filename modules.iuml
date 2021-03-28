@@ -1,0 +1,23 @@
+@startuml
+Presenter <|-- Application
+View <|-- Application
+View <|-- Presenter
+Presenter --|> Repository
+Repository --|> Reader
+
+Application : start()
+
+Presenter : startSurvey(String)
+Presenter : setView(View?)
+
+Reader : createFile(String): File
+Reader : readLines(File): List<String>
+Reader : writeLines(List<String>, File)
+
+Repository : getQuestions(Subject)
+Repository : createAnswersFile(String, String, List<StudentInput>, Subject)
+Repository : getQuestions(String, String, List<StudentInput>, Subject, Long, Long)
+
+View : askForInput(String?)
+View : printMessage(String?)
+@enduml
